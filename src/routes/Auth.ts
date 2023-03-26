@@ -13,4 +13,10 @@ export class Auth implements IRouter{
         return this.router;
     }
 
+    public HelloAuth() : void {
+        this.getRouter().get("/", (req, res) => {
+            res.send("Hello Auth");
+        }  
+    }
+
 }

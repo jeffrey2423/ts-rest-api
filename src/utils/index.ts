@@ -30,7 +30,7 @@ module Utils {
 
   export function IsNothing(value: any): boolean {
     let flag = false;
-    if (value === undefined || value === "" || value === null) {
+    if (value === undefined || value === "" || value === null || value === " ") {
       flag = true;
     }
     return flag;
